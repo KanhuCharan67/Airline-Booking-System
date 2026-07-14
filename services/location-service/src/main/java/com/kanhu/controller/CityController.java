@@ -36,7 +36,7 @@ public class CityController {
         }
         return ResponseEntity.ok(city);
     }
-
+    @GetMapping
     public ResponseEntity<Page<CityResponse>> getAllCities(
             @RequestParam(defaultValue = "0") int page,
             @RequestParam(defaultValue = "20") int size,
